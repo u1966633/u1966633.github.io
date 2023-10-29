@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Martí Fontfreda i Soy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="text-logo">
+            <div class="logo-symbol">M</div>
+            <p class="logo-text"><b>Martí</b> Fontfreda Soy</p>
+        </div>
+        <nav>
+            <a href="about_me.html" class="menu-button">About Me</a>
+            <a href="resume.html" class="menu-button">Resume</a>
+            <a href="portfolio.html" class="menu-button">Portfolio</a>
+            <a href="contact.html" class="menu-button" style="color: black;">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div-title">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fa fa-mobile-phone"></i>
+                    <p>680629279</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa fa-map-marker"></i>
+                    <p>Olot</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa fa-envelope"></i>
+                    <p>fontyfontfreda@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>How Can I Help You?</h2> <!-- El títol es mostra sobre les dues columnes -->
+                <div class="form-columns">
+                    <div class="form-column">
+                        <form onsubmit="sendMessage()">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required><br><br>
+                    </div>
+                    <div class="form-column">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                        <div class="submit-div">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>            
+    </main>
+
+</body>
+
+</html>

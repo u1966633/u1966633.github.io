@@ -1,0 +1,325 @@
+:root {
+  --main-color: #f7b519;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-symbol {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  background: var(--main-color);
+  text-align: center;
+  font: 28px Poppins, sans-serif;
+  color: white;
+}
+
+.logo-text {
+  padding-left: 10px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.menu-button {
+  color: lightgray;
+  text-decoration: none;
+}
+
+/* main
+  
+     about me */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: black;
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 20px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info {
+  margin-left: 7%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0 20px 0 20px;
+}
+
+.btn-cv {
+  border: 2px solid var(--main-color);
+}
+
+.btn-contact {
+  border: 2px solid lightgray;
+  margin-left: 20px;
+}
+
+/* Resume page */
+
+.div-title {
+  background-color: #fcfcfc;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 40px 45px;
+  width: 100%;
+  height: 10%;
+}
+
+.div-title h1 {
+  padding-left: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.year {
+  border: 3px solid var(--main-color);
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.school {
+  padding-left: 10px;
+}
+
+.skills {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progressbar {
+  border-radius: 13px;
+  padding: 3px;
+  border: 2px solid lightslategray;
+}
+
+.bar {
+  background-color: var(--main-color);
+  height: 5px;
+  border-radius: 10px;
+}
+
+.bar-html {
+  width: 90%;
+}
+
+.bar-php {
+  width: 80%;
+}
+
+.bar-javascript {
+  width: 90%;
+}
+
+.bar-cplusplus {
+  width: 80%;
+}
+
+.bar-java {
+  width: 80%;
+}
+
+.bar-sql {
+  width: 95%;
+}
+
+/* Portfolio */
+
+.amazcat {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.portfolio-main-img {
+  width: 80%;
+}
+
+/* Contact */
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.contact-card i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex; /* Utilitzem flexbox per a una divisió senzilla en dues columnes */
+  justify-content: space-between; /* Espai entre dues columnes */
+  flex-direction: column; /* Canviem la direcció del flexbox a columna */
+}
+
+.form-columns {
+  display: flex; /* Tornem a fer servir flexbox per a les dues columnes */
+  justify-content: space-between;
+}
+
+.form-column {
+  flex: 1;
+  padding: 0 10px; /* Padding per a la separació entre columnes */
+  width: 50%;
+}
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estils per a la icona del formulari */
+.fa-mobile-phone,
+.fa-map-marker,
+.fa-envelope {
+  font-size: 1.5em;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+/* Hover effect for buttons */
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: 0.3s;
+}
